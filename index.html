@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+</head>
+<body>
+    <!-- Loading Animation -->
+<div id="loader">
+    <img src="qr-icon.png" alt="Loading..." class="loader-logo" />
+  </div>
+  
+  <div class="container">
+    <div class="card">
+      <!-- Dark Mode Toggle -->
+      <div class="dark-toggle">
+        <label class="switch">
+          <input type="checkbox" id="darkModeToggle" />
+          <span class="slider">
+            <i class="icon fas fa-lightbulb" id="themeIcon"></i>
+          </span>
+        </label>
+      </div>
+
+      <h1>QR Code Generator</h1>
+      <input type="text" id="text" placeholder="Enter URL or Text" />
+      <button id="generate">Generate</button>
+      <div id="qrcode"></div>
+
+      <div id="download-buttons" style="display: none;">
+        <button id="download-png">Download PNG</button>
+        <button id="download-jpg">Download JPG</button>
+      </div>
+
+      <footer>
+        Design & Built by <a href="https://github.com/royavi21" target="_blank">Avijit Roy</a> | 2025
+      </footer>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("loader");
+      loader.classList.add("fade-out");
+      setTimeout(() => loader.style.display = "none", 1000);
+    });
+  </script>
+  
+</body>
+</html>
