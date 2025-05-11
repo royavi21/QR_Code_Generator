@@ -91,7 +91,7 @@ body {
   }
   
   body.dark input[type="text"] {
-    background-color: #313131;
+    background-color: #2c2b2b;
     color: #fff;
     border: 1px solid #555;
   }
