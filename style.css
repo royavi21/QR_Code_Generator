@@ -87,7 +87,7 @@ body {
   
   body.dark .card {
     background-color: #191919;
-    color: #f2f2f2;
+    color: #e5e5e6;
   }
   
   body.dark input[type="text"] {
